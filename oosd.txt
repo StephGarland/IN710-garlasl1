@@ -1,0 +1,11 @@
+Useful readings:
+Design Patterns: Elements of Reusable OO Software 1995
+Head First OO Analysis and Design 2006
+The Art of Unit Testing: with examples in C# 2013
+
+
+Required Reading:
+Martin, Robert C. (2008) Clean Code. 
+Chapter 1
+Online in the Safari collection proquestcombo.safaribooksonline.com -> has to be from OP/View Client.
+
