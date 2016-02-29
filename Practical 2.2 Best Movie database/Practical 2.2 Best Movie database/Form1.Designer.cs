@@ -53,6 +53,7 @@
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add Movie";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -62,6 +63,7 @@
             this.btnDelete.TabIndex = 1;
             this.btnDelete.Text = "Delete Movie";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSearch
             // 
@@ -71,6 +73,7 @@
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnPrint
             // 
@@ -80,6 +83,7 @@
             this.btnPrint.TabIndex = 3;
             this.btnPrint.Text = "Print All";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // label1
             // 
