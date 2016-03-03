@@ -45,7 +45,7 @@ namespace RainbowChicken2016
         {
             int count = 0;
             Pellet current = headPointer;
-            while (current.Next != null)
+            while (current != null)
             {
                 count++;
                 current = current.Next;
@@ -59,7 +59,7 @@ namespace RainbowChicken2016
         public void Move()
         {
             Pellet current = headPointer;
-            while (current.Next != null)
+            while (current != null)
             {
                 current.Move();
                 current = current.Next;
@@ -73,7 +73,7 @@ namespace RainbowChicken2016
         public void KillOutOfBounds()
         {
             Pellet current = headPointer;
-            while (current.Next != null)
+            while (current != null)
             {
                 if(current.TestOutOfBounds(boundsRectangle))
                 {
@@ -91,11 +91,37 @@ namespace RainbowChicken2016
         public void DeleteOne(Pellet pelletToDelete)
         {
             Pellet current = headPointer;
-            while (current.Next != pelletToDelete)
+
+            //If you are deleting the first node
+            if (pelletToDelete == headPointer)
             {
-                current = current.Next;
+                //If it is the only node in the list
+                if (Count() == 1)
+                {
+                    //Head and Tail both become null
+                    headPointer = null;
+                    tailPointer = null;
+                }
+                else
+                {
+                    //Move Head along to the second node
+                    headPointer = current.Next;
+                }
             }
-            current.Next = pelletToDelete.Next;
+            else
+            {
+                while (current.Next != pelletToDelete)
+                {
+                    current = current.Next;
+                }
+                current.Next = pelletToDelete.Next;
+
+                //If you have just deleted the last node in the list
+                if (true)
+                {
+                    //Set Tail to point to the “previous” node, because it is now at the end
+                }
+            }
         }
 
         //==============================================================================
@@ -104,7 +130,7 @@ namespace RainbowChicken2016
         public void DeleteNotAlive()
         {
             Pellet current = headPointer;
-            while (current.Next != null)
+            while (current != null)
             {
                 if(current.IsAlive == false)
                 {
@@ -120,7 +146,7 @@ namespace RainbowChicken2016
         public void Draw()
         {
             Pellet current = headPointer;
-            while (current.Next != null)
+            while (current != null)
             {
                 current.Draw();
                 current = current.Next;
