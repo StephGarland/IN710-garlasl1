@@ -90,8 +90,6 @@ namespace RainbowChicken2016
         //==============================================================================
         public void DeleteOne(Pellet pelletToDelete)
         {
-            Pellet current = headPointer;
-
             //If you are deleting the first node
             if (pelletToDelete == headPointer)
             {
@@ -105,11 +103,12 @@ namespace RainbowChicken2016
                 else
                 {
                     //Move Head along to the second node
-                    headPointer = current.Next;
+                    headPointer = headPointer.Next;
                 }
             }
             else
             {
+                Pellet current = headPointer;
                 while (current.Next != pelletToDelete)
                 {
                     current = current.Next;
@@ -117,9 +116,10 @@ namespace RainbowChicken2016
                 current.Next = pelletToDelete.Next;
 
                 //If you have just deleted the last node in the list
-                if (true)
+                if (pelletToDelete == tailPointer)
                 {
                     //Set Tail to point to the “previous” node, because it is now at the end
+                    tailPointer = current;
                 }
             }
         }
