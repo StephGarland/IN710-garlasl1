@@ -12,12 +12,6 @@ namespace Practical_3._2_Stack.Tests
     public class StackTests
     {
         [TestMethod()]
-        public void StackTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
         public void PushTest_AddOne()
         {
             Stack stack = new Stack();
