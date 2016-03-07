@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practical_3._2_Stack
 {
-    class Stack
+    public class Stack
     {
         StringNode head;
         StringNode tail;
@@ -37,9 +37,16 @@ namespace Practical_3._2_Stack
         //Returns the most recently added string, and removes it from the stack
         public string Pop()
         {
-            string mostRecent = tail.Data;
-            DeleteTail();
-            return mostRecent;
+            if (Count() != 0)
+            {
+                string mostRecent = tail.Data;
+                DeleteTail();
+                return mostRecent;
+            }
+            else
+            {
+                throw new NullReferenceException("There are no items in this collection. Add an item, then try again");
+            }
         }
 
         private void DeleteTail()
@@ -69,7 +76,14 @@ namespace Practical_3._2_Stack
         //Returns the most recently added string, but does not remove it from the stack
         public string Peek()
         {
-            return tail.Data;
+            if(Count() != 0)
+            {
+                return tail.Data;
+            }
+            else
+            {
+                throw new NullReferenceException("There are no items in this collection. Add an item, then try again");
+            }                     
         }
 
         //Returns the number of strings currently held in the stack
