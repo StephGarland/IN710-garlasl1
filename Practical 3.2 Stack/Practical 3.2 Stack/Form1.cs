@@ -15,6 +15,12 @@ namespace Practical_3._2_Stack
         public Form1()
         {
             InitializeComponent();
+            Stack stack = new Stack();
+            StringNode string2 = new StringNode("string2");
+            StringNode string1 = new StringNode("string1", string2);
+            stack.Push(string1.Data);
+            Console.WriteLine(stack.Peek());
+
         }
     }
 }
