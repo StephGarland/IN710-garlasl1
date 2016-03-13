@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Game_Character
 {
-    public class Dagger : Weapon
+    public class Dagger : IWeaponBehaviour
     {
-        public override string UseWeapon()
+        public string UseWeapon()
         {
             return "I poke with my dagger!";
         }

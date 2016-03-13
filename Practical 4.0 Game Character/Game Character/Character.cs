@@ -9,7 +9,7 @@ namespace Game_Character
     public abstract class Character
     {
         public string Name { get; }
-        public Weapon Weapon { get; set; }
+        public IWeaponBehaviour Weapon { get; set; }
 
         public Character(string name)
         {

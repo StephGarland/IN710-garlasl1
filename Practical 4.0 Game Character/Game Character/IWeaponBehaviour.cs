@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game_Character
 {
-    interface IWeaponBehaviour
+    public interface IWeaponBehaviour
     {
         string UseWeapon();
     }

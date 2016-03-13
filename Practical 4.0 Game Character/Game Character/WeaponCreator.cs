@@ -8,9 +8,9 @@ namespace Game_Character
 {
     class WeaponCreator
     {
-        public static Weapon CreateWeapon(string name)
+        public static IWeaponBehaviour CreateWeapon(string name)
         {
-            Weapon newWeapon;
+            IWeaponBehaviour newWeapon;
             switch (name)
             {
                 case "Sword":
