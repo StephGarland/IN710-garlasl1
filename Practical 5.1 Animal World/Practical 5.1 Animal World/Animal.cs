@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Practical_5._1_Animal_World
 {
-    class Animal
+    public class Animal
     {
         protected string name;
         protected string family;
