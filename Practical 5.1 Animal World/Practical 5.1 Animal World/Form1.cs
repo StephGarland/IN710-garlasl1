@@ -15,7 +15,7 @@ namespace Practical_5._1_Animal_World
         Random rGen;
         Graphics canvas;
 
-        int nAnimalTypes = 3;
+        int nAnimalTypes = 4;
 
         Continent northAmerica;
         Continent australia;
@@ -32,12 +32,14 @@ namespace Practical_5._1_Animal_World
 
         private void btn_NorthAmerica_Click(object sender, EventArgs e)
         {
+            this.Refresh();
             listBox_animalDescriptions.Items.Clear();
             northAmerica.runSimulation();
         }
 
         private void btn_Australia_Click(object sender, EventArgs e)
         {
+            this.Refresh();
             listBox_animalDescriptions.Items.Clear();
             australia.runSimulation();
         }

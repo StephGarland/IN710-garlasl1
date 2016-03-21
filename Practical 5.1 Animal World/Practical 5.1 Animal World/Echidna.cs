@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Practical_5._1_Animal_World
 {
-    class Crocodile : Animal
+    class Echidna : Animal
     {
-        public Crocodile()
+        public Echidna()
         {
-            name = "Crocodile";
-            family = "Carnivore";
-            food = "Children";
-            image = new Bitmap("crocodile.jpg");
+            name = "Echidna";
+            family = "Insectivore";
+            food = "Ants";
+            image = new Bitmap("echidna.jpg");
         }
     }
 }

@@ -22,6 +22,9 @@ namespace Practical_5._1_Animal_World
                 case 2:
                     newAnimal = new Kangaroo();
                     break;
+                case 3:
+                    newAnimal = new Echidna();
+                    break;
             }
             return newAnimal;
         }
