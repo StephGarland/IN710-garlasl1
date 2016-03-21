@@ -31,5 +31,13 @@ namespace Practical_5._2_Computer_Builder
             Memory memory = new Memory(description, price);
             return memory;
         }
+
+        public Monitor makeMonitor()
+        {
+            string description = "18inch LCD";
+            double price = 129.99;
+            Monitor monitor = new Monitor(description, price);
+            return monitor;
+        }
     }
 }

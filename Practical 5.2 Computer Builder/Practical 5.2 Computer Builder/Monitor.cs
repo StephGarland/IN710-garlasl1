@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Practical_5._2_Computer_Builder
 {
-    public interface IMachineMaker
+    public class Monitor : Component
     {
-        CPU makeCPU();
-        Memory makeMemory();
-        GraphicsCard makeGraphicsCard();
-        Monitor makeMonitor();
+        public Monitor(string description, double price)
+            : base(description, price)
+        {
+
+        }
     }
 }

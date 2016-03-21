@@ -23,6 +23,7 @@ namespace Practical_5._2_Computer_Builder
             CPU currentCPU = machineMaker.makeCPU();
             Memory currentMemory = machineMaker.makeMemory();
             GraphicsCard currentGraphicsCard = machineMaker.makeGraphicsCard();
+            Monitor currentMonitor = machineMaker.makeMonitor();
 
             double totalPrice = currentCPU.Price + currentMemory.Price + currentGraphicsCard.Price;
 
@@ -33,6 +34,7 @@ namespace Practical_5._2_Computer_Builder
             listbox.Items.Add(currentCPU.Price + "\t" + currentCPU.ToString());
             listbox.Items.Add(currentMemory.Price + "\t" + currentMemory.ToString());
             listbox.Items.Add(currentGraphicsCard.Price + "\t" + currentGraphicsCard.ToString());
+            listbox.Items.Add(currentMonitor.Price + "\t" + currentMonitor.ToString());
 
             listbox.Items.Add("-----------------------------");
             listbox.Items.Add("Total Price: " + totalPrice.ToString());
