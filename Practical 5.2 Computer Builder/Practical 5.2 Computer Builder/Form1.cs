@@ -29,6 +29,10 @@ namespace Practical_5._2_Computer_Builder
             {
                 machineMaker = new BusinessMachineMaker();
             }
+            else if(rb_laptop.Checked)
+            {
+                machineMaker = new LaptopMachineMaker();
+            }
             else
             {
                 machineMaker = new MultimediaMachineMaker();

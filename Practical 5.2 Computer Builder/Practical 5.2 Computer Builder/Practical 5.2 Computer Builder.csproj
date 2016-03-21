@@ -58,6 +58,7 @@
     <Compile Include="GameMachineMaker.cs" />
     <Compile Include="GraphicsCard.cs" />
     <Compile Include="IMachineMaker.cs" />
+    <Compile Include="LaptopMachineMaker.cs" />
     <Compile Include="MachineSpecPrinter.cs" />
     <Compile Include="Memory.cs" />
     <Compile Include="Monitor.cs" />

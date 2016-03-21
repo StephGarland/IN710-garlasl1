@@ -34,6 +34,7 @@
             this.rb_business = new System.Windows.Forms.RadioButton();
             this.rb_game = new System.Windows.Forms.RadioButton();
             this.lb_specs = new System.Windows.Forms.ListBox();
+            this.rb_laptop = new System.Windows.Forms.RadioButton();
             this.gb_MachineType.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             // 
             // gb_MachineType
             // 
+            this.gb_MachineType.Controls.Add(this.rb_laptop);
             this.gb_MachineType.Controls.Add(this.rb_multimedia);
             this.gb_MachineType.Controls.Add(this.rb_business);
             this.gb_MachineType.Controls.Add(this.rb_game);
@@ -100,6 +102,17 @@
             this.lb_specs.Size = new System.Drawing.Size(220, 238);
             this.lb_specs.TabIndex = 2;
             // 
+            // rb_laptop
+            // 
+            this.rb_laptop.AutoSize = true;
+            this.rb_laptop.Location = new System.Drawing.Point(7, 136);
+            this.rb_laptop.Name = "rb_laptop";
+            this.rb_laptop.Size = new System.Drawing.Size(58, 17);
+            this.rb_laptop.TabIndex = 3;
+            this.rb_laptop.TabStop = true;
+            this.rb_laptop.Text = "Laptop";
+            this.rb_laptop.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,6 +137,7 @@
         private System.Windows.Forms.RadioButton rb_business;
         private System.Windows.Forms.RadioButton rb_game;
         private System.Windows.Forms.ListBox lb_specs;
+        private System.Windows.Forms.RadioButton rb_laptop;
     }
 }
 
