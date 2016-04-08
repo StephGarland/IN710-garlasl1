@@ -10,8 +10,8 @@ namespace Practical_8._2_Petrol_Bots
     public class Ship
     {
         const int FUEL_CAPACITY = 10;
-        const int WIDTH = 10;
-        const int HEIGHT = 10;
+        const int WIDTH = 20;
+        const int HEIGHT = 20;
         Brush shipColour;
 
         Point currentPosition;
@@ -73,8 +73,8 @@ namespace Practical_8._2_Petrol_Bots
 
         public void NewDestination()
         {          
-            destination.X = random.Next(0, 20);
-            destination.Y = random.Next(0, 20);
+            destination.X = random.Next(0, 200);
+            destination.Y = random.Next(0, 200);
         }
     }
 }
