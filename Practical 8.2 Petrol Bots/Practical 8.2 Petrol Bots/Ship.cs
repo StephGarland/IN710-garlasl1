@@ -12,7 +12,7 @@ namespace Practical_8._2_Petrol_Bots
         const int FUEL_CAPACITY = 10;
         const int WIDTH = 10;
         const int HEIGHT = 10;
-        Pen shipColour;
+        Brush shipColour;
 
         Point currentPosition;
         Point destination;
@@ -23,7 +23,7 @@ namespace Practical_8._2_Petrol_Bots
         public Ship()
         {
             random = new Random();
-            shipColour = new Pen(Color.CadetBlue);
+            shipColour = Brushes.CadetBlue;
             Fuel = FUEL_CAPACITY;
         }
 
@@ -34,7 +34,7 @@ namespace Practical_8._2_Petrol_Bots
 
         public void Draw(Graphics graphics)
         {
-            graphics.DrawRectangle(shipColour, currentPosition.X, currentPosition.Y, WIDTH, HEIGHT);
+            graphics.FillRectangle(shipColour, currentPosition.X, currentPosition.Y, WIDTH, HEIGHT);
         }
 
         public void Move()
