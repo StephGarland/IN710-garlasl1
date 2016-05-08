@@ -80,14 +80,14 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(255, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(376, 199);
+            this.listBox1.Size = new System.Drawing.Size(458, 199);
             this.listBox1.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 227);
+            this.ClientSize = new System.Drawing.Size(725, 227);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btn_FiresCaused);
             this.Controls.Add(this.btn_imageInfo);
